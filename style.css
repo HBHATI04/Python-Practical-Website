@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    padding: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 20px;
+    color: white;
+    border-radius: 0 0 8px 8px;
+    z-index: 1000; /* Ensure header is on top */
+}
+
+.header-left img {
+    height: 80px;
+}
+
+.header-right h1 {
+    font-size: 24px;
+}
+
+.header-right p {
+    margin-top: 5px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    padding: 2px 20px;
+    color: white;
+    text-align: center;
+    z-index: 1000;
+    border-radius: 0 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+}
+
+.footer-content p {
+    margin: 0;
+}
+
+.footer-content p a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-content p a:hover {
+    text-decoration: underline;
+}
+
+/* Main content should account for header and footer space */
+main {
+    margin-top: 140px; /* Adjust based on header height */
+    margin-bottom: 100px; /* Adjust based on footer height */
+    padding: 0 20px;
+    height: calc(100vh - 240px); /* Dynamic height based on viewport */
+    overflow-y: auto; /* Enable scrolling for practicals */
+}
+
+h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.practical-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.practical-item {
+    text-align: center;
+    margin: 10px;
+    flex: 1 1 22%; /* Ensures 4 items per row */
+    max-width: 22%;
+}
+
+.practical-logo {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.practical-item a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+}
+
+.practical-item a:hover {
+    text-decoration: underline;
+    color: lightblue;
+}
+
